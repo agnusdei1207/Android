@@ -44,7 +44,7 @@ public class Fragment2 extends Fragment {
 
             // 1) i번째 두더지 찾고
             dodos[i] = v.findViewById(dodoId);
-            // 2) 모든 두더지 올라오게! setImageResource 해주세요!
+            // 2) 모든 두더지 내려오게! setImageResource 해주세요!
             dodos[i].setImageResource(R.drawable.off);
             dodos[i].setTag(0);
 
