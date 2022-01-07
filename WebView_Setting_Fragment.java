@@ -38,9 +38,9 @@ public class Fragment4 extends Fragment {
                 //getSharedPreferences : mySPF 라는 이름의 메모리를 가져오는데~
                 //없으면 새로 만들고 없으면 가져와라 : MODE_PRIVATE
                 SharedPreferences spf = getContext().getSharedPreferences("mySPF", Context.MODE_PRIVATE);
-                //입력할 때만 edit 사용
+                //Cache에 입력 및 저장할 때 꼭 edit 사용!!
                 spf.edit().putString("url", edt_url.getText().toString()).commit();
-                //데이터 2개 이상 넣고 싶으면 key값 다르게 해서 put... 여러번 하기!
+                //데이터 2개 이상 넣고 싶으면 key값 다르게 해서 put~ 여러번 하기!
             }
         });
 
